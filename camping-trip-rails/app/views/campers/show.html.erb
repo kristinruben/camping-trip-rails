@@ -1,0 +1,8 @@
+<h1><%= @camper.name %></h1>
+
+<%= "Supplies Brought by #{@camper.name}" %>
+<ul>
+  <% @supplies.each do |supply| %>
+  <li><%= supply.name %></li>
+  <% end %>
+</ul>
